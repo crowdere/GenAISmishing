@@ -1,10 +1,13 @@
 # GenAISmishing
 Operationalization of chatGPT to perform robust Smishing attacks gaining more than just a password but also additional PII
+## Demo
+![](./demo.gif)
 
 ## Possible Future Project Goals
 - [x] Generative AI Conversations with ChatGPT
+- [x] Basic PII Filters 
 - [ ] Web UI 
-- [ ] PII Filters 
+- [ ] Adv ML based PII Filters 
 - [ ] Multiple conversation support
 - [ ] More SMS Support 
 
@@ -65,6 +68,8 @@ SMIshing (SMS phishing) can potentially impact a wide range of compliance and le
 
 It's important to note that the impact of SMIshing on these legal and compliance standards can vary based on the specifics of the SMIshing campaign, the nature of the information targeted, and the jurisdictions involved. Legal advice should be sought for a comprehensive understanding of these impacts in specific scenarios.
 
+### Known Bug
+Using Twilio webhooks is nice but with the resp.message functionality we cant monitor the status of our messages. This is why in the demo i send an additional "?" to move the conversation forward. We should break up the code and not use the webhook to reply, but to drive a process in the background to send repiles with message.sid status monitoring. 
 
 ### Disclaimer
 This section is provided for informational purposes and should not be construed as legal advice.
