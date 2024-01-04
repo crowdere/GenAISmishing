@@ -1,5 +1,6 @@
 # GenAISmishing
-Operationalization of chatGPT to perform robust Smishing attacks gaining more than just a password but also additional PII
+Operationalization of chatGPT to perform robust Smishing attacks gaining more than just a password but also additional PII. Notifiy the user it was awareness training after 10 attempts to extract these details. 
+
 ## Demo
 ![](./demo.gif)
 
