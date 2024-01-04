@@ -6,6 +6,8 @@ Operationalization of chatGPT to perform robust Smishing attacks gaining more th
 ## Possible Future Project Goals
 - [x] Generative AI Conversations with ChatGPT
 - [x] Basic PII Filters 
+- [ ] Excel csv loading of targets
+- [ ] Database support
 - [ ] Web UI 
 - [ ] Adv ML based PII Filters 
 - [ ] Multiple conversation support
@@ -15,13 +17,31 @@ Operationalization of chatGPT to perform robust Smishing attacks gaining more th
 SMSishing is a form of phishing attack where the attacker uses text messaging (SMS) to deceive recipients into revealing personal information, such as passwords or credit card numbers. Unlike traditional phishing, which typically relies on email, SMSishing exploits the more personal and immediate nature of text messages. This method is often more effective as people tend to trust text messages more than emails, making them more susceptible to sharing sensitive information.
 
 ## Why Generative AI?
-Generative AI, particularly large language models like ChatGPT, brings a new dimension to social engineering tactics such as SMSishing. These AI models can generate convincing and contextually relevant messages, interact in real-time, and adapt responses based on the conversation's flow. This makes the phishing attempts more personalized and difficult to detect. While traditional SMSishing might use generic messages, generative AI can tailor conversations to individual targets, increasing the likelihood of success. However, it is crucial to highlight that such use of AI raises significant ethical and legal concerns, and should only be pursued within the bounds of law and for educational or preventive purposes.
+Generative AI, particularly large language models like ChatGPT, brings a new dimension to social engineering tactics such as SMSishing. These AI models can generate convincing and contextually relevant messages, interact in real-time, and adapt responses based on the conversation's flow. 
+
+This makes the phishing attempts more personalized and difficult to detect. While traditional SMSishing might use generic messages, generative AI can tailor conversations to individual targets, increasing the likelihood of success.  Often all the details outlined in this example, Name, Role, Company, Office, are publically available on linkedin. 
+
+However, it is crucial to highlight that such use of AI raises significant ethical and legal concerns, and should only be pursued within the bounds of law and for educational or preventive purposes.
 
 ## Architecture 
 ![image info](./arhitecture.drawio.png)
+SMishing_Server.py is the orchastrator of Twilio Webhooks to receive messages, and chatGPT to generate repiles, intercepting all logs and highlighting PII in the middle. 
+
+Twilio SMS uses cloud-based APIs to send text messages. To host your own, use open-source SMS gateway software on a server. Likewise with ChatGPT, there are local models available to be sit in replacements.
 
 ## Setup 
-I will write this.
+1. **Set Up Twilio Webhook:**
+   - Log in to your account at `console.twil.io`.
+   - Go to `Phone Numbers` > `Manage`, and select your active number.
+   - Scroll down to the webhook section and set the webhook URL to your server's public address followed by `/sms`.
+     - Example: `https://4172-62-80-122-52.ngrok-free.app/sms`.
+
+2. **Configure Your Application:**
+   - Rename `config_example.json` to `config.json`.
+   - Edit `config.json` to include your API keys and target information.
+
+3. **Run the Script:**
+   - Execute the script by running `python smishing_server.py` in your command line.
 
 
 ## Ethical and Legal Considerations
@@ -32,8 +52,7 @@ I will write this.
 - **No Malicious Intent:** The project must not be used for malicious purposes. The primary goal should be educational, raising awareness about the risks of SMSishing and similar threats.
 - **Respect and Non-Harm:** Ensure that all interactions and procedures respect the dignity and rights of the individuals involved. Avoid causing distress or harm to participants.
 
-### WHy should you care: Legal Compliance
-
+### Why should you care: Legal Compliance
 SMIshing (SMS phishing) can potentially impact a wide range of compliance and legal requirements or standards. Here are some of them:
 
 1. **Data Protection and Privacy Laws**

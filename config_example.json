@@ -1,0 +1,11 @@
+{
+    "OpenAI_API_KEY": "sk-**************************************",
+    "account_sid":"*******************",
+    "auth_token":"*******************",
+    "From":"+11234567890",
+    "To":"+11234567890",
+    "Victim_Name": "John Doe",
+    "Victim_Role": "Software Engineer",
+    "Victim_Office": "Waterloo",
+    "Victim_Company": "Google"
+}
