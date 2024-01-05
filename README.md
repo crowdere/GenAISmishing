@@ -18,9 +18,9 @@ Operationalization of chatGPT to perform robust Smishing attacks gaining more th
 SMishing is a form of phishing attack where the attacker uses text messaging (SMS) to deceive recipients into revealing personal information, such as passwords or credit card numbers. Unlike traditional phishing, which typically relies on email, SMishing exploits the more personal and immediate nature of text messages. This method is often more effective as people tend to trust text messages more than emails, making them more susceptible to sharing sensitive information.
 
 ## Why Generative AI?
-Generative AI, particularly large language models like ChatGPT, brings a new dimension to social engineering tactics such as SMSishing. These AI models can generate convincing and contextually relevant messages, interact in real-time, and adapt responses based on the conversation's flow. 
+Generative AI, particularly large language models like ChatGPT, brings a new dimension to social engineering tactics such as SMishing. These AI models can generate convincing and contextually relevant messages, interact in real-time, and adapt responses based on the conversation's flow. 
 
-This makes the phishing attempts more personalized and difficult to detect. While traditional SMSishing might use generic messages, generative AI can tailor conversations to individual targets, increasing the likelihood of success.  Often all the details outlined in this example, Name, Role, Company, Office, are publically available on linkedin. 
+This makes the phishing attempts more personalized and difficult to detect. While traditional SMishing might use generic messages, generative AI can tailor conversations to individual targets, increasing the likelihood of success.  Often all the details outlined in this example, Name, Role, Company, Office, are publically available on linkedin. 
 
 However, it is crucial to highlight that such use of AI raises significant ethical and legal concerns, and should only be pursued within the bounds of law and for educational or preventive purposes.
 
@@ -50,7 +50,7 @@ Twilio SMS uses cloud-based APIs to send text messages. To host your own, use op
 ### Ethical Guidelines
 - **Consent and Transparency:** All activities involving social engineering, especially those involving gathering personal information, must be conducted with explicit consent from the participants. It is essential to inform participants about the nature, purpose, and potential risks of the project.
 - **Privacy and Data Protection:** Safeguarding the privacy and security of any data collected during the project is paramount. Use stringent measures to ensure data protection and comply with data privacy regulations like GDPR or CCPA.
-- **No Malicious Intent:** The project must not be used for malicious purposes. The primary goal should be educational, raising awareness about the risks of SMSishing and similar threats.
+- **No Malicious Intent:** The project must not be used for malicious purposes. The primary goal should be educational, raising awareness about the risks of SMishing and similar threats.
 - **Respect and Non-Harm:** Ensure that all interactions and procedures respect the dignity and rights of the individuals involved. Avoid causing distress or harm to participants.
 
 ### Why should you care: Legal Compliance
