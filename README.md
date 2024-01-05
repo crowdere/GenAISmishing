@@ -15,7 +15,7 @@ Operationalization of chatGPT to perform robust Smishing attacks gaining more th
 - [ ] More SMS Support 
 
 ## What is SMishing?
-SMishing is a form of phishing attack where the attacker uses text messaging (SMS) to deceive recipients into revealing personal information, such as passwords or credit card numbers. Unlike traditional phishing, which typically relies on email, SMSishing exploits the more personal and immediate nature of text messages. This method is often more effective as people tend to trust text messages more than emails, making them more susceptible to sharing sensitive information.
+SMishing is a form of phishing attack where the attacker uses text messaging (SMS) to deceive recipients into revealing personal information, such as passwords or credit card numbers. Unlike traditional phishing, which typically relies on email, SMishing exploits the more personal and immediate nature of text messages. This method is often more effective as people tend to trust text messages more than emails, making them more susceptible to sharing sensitive information.
 
 ## Why Generative AI?
 Generative AI, particularly large language models like ChatGPT, brings a new dimension to social engineering tactics such as SMSishing. These AI models can generate convincing and contextually relevant messages, interact in real-time, and adapt responses based on the conversation's flow. 
